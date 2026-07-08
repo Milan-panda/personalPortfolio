@@ -1,0 +1,92 @@
+import type { ReactElement } from "react";
+import type { LucideIcon } from "lucide-react";
+import {
+  Activity,
+  BarChart3,
+  Bell,
+  Box,
+  Boxes,
+  Brain,
+  Building2,
+  Clock,
+  Cloud,
+  Code2,
+  Compass,
+  Container,
+  Database,
+  Eye,
+  Film,
+  GitMerge,
+  Globe,
+  HardDrive,
+  KeyRound,
+  Layers,
+  LayoutTemplate,
+  LineChart,
+  Lock,
+  MessagesSquare,
+  Monitor,
+  Network,
+  Puzzle,
+  Route,
+  Scale,
+  Search,
+  Server,
+  Settings,
+  Share2,
+  Shield,
+  Smartphone,
+  Terminal,
+  Workflow,
+  Zap,
+} from "lucide-react";
+import type { ComponentCategory } from "../types";
+import type { IconProps } from "./types";
+
+function lucide(Icon: LucideIcon) {
+  return function LucideIconComponent({ className }: IconProps) {
+    return <Icon className={className} strokeWidth={1.75} aria-hidden />;
+  };
+}
+
+export const categoryIcons: Record<ComponentCategory, (props: IconProps) => ReactElement> = {
+  clients: lucide(Monitor),
+  network: lucide(Network),
+  databases: lucide(Database),
+  compute: lucide(Server),
+  storage: lucide(HardDrive),
+  cache: lucide(Zap),
+  messaging: lucide(MessagesSquare),
+  api: lucide(Code2),
+  auth: lucide(KeyRound),
+  microservices: lucide(Boxes),
+  "load-balancing": lucide(Scale),
+  "stream-processing": lucide(Activity),
+  search: lucide(Search),
+  analytics: lucide(BarChart3),
+  "data-pipelines": lucide(Workflow),
+  monitoring: lucide(LineChart),
+  cicd: lucide(GitMerge),
+  containers: lucide(Container),
+  orchestration: lucide(Share2),
+  "service-discovery": lucide(Compass),
+  "service-mesh": lucide(Network),
+  secrets: lucide(Lock),
+  config: lucide(Settings),
+  scheduling: lucide(Clock),
+  "ai-ml": lucide(Brain),
+  media: lucide(Film),
+  notifications: lucide(Bell),
+  security: lucide(Shield),
+  observability: lucide(Eye),
+  patterns: lucide(Puzzle),
+  edge: lucide(Cloud),
+  infrastructure: lucide(Building2),
+  templates: lucide(LayoutTemplate),
+  aws: lucide(Cloud),
+  azure: lucide(Cloud),
+  gcp: lucide(Cloud),
+  generic: lucide(Box),
+};
+
+export const genericIcon = categoryIcons.generic;

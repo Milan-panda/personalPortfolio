@@ -1,0 +1,42 @@
+import type { ServiceComponentDef } from "../types";
+
+export const patternComponents: ServiceComponentDef[] = [
+  // Database Architecture
+  { id: "primary-database", label: "Primary Database", category: "patterns", subcategory: "db-architecture" },
+  { id: "replica", label: "Replica", category: "patterns", subcategory: "db-architecture" },
+  { id: "read-replica", label: "Read Replica", category: "patterns", subcategory: "db-architecture" },
+  { id: "leader", label: "Leader", category: "patterns", subcategory: "db-architecture" },
+  { id: "follower", label: "Follower", category: "patterns", subcategory: "db-architecture" },
+  { id: "multi-master", label: "Multi-Master", category: "patterns", subcategory: "db-architecture" },
+  { id: "shard", label: "Shard", category: "patterns", subcategory: "db-architecture" },
+  { id: "partition", label: "Partition", category: "patterns", subcategory: "db-architecture" },
+  { id: "replication", label: "Replication", category: "patterns", subcategory: "db-architecture" },
+  { id: "backup", label: "Backup", category: "patterns", subcategory: "db-architecture" },
+  { id: "snapshot", label: "Snapshot", category: "patterns", subcategory: "db-architecture" },
+  // Communication Patterns
+  { id: "request-response", label: "Request / Response", category: "patterns", subcategory: "communication" },
+  { id: "synchronous", label: "Synchronous", category: "patterns", subcategory: "communication" },
+  { id: "asynchronous", label: "Asynchronous", category: "patterns", subcategory: "communication" },
+  { id: "event-driven", label: "Event Driven", category: "patterns", subcategory: "communication" },
+  { id: "pub-sub-pattern", label: "Pub/Sub", category: "patterns", subcategory: "communication" },
+  { id: "producer-consumer", label: "Producer Consumer", category: "patterns", subcategory: "communication" },
+  { id: "fan-out", label: "Fan-Out", category: "patterns", subcategory: "communication" },
+  { id: "fan-in", label: "Fan-In", category: "patterns", subcategory: "communication" },
+  { id: "streaming-pattern", label: "Streaming", category: "patterns", subcategory: "communication" },
+  { id: "bidirectional-streaming", label: "Bidirectional Streaming", category: "patterns", subcategory: "communication" },
+  // Reliability Patterns
+  { id: "retry", label: "Retry", category: "patterns", subcategory: "reliability" },
+  { id: "timeout", label: "Timeout", category: "patterns", subcategory: "reliability" },
+  { id: "circuit-breaker", label: "Circuit Breaker", category: "patterns", subcategory: "reliability" },
+  { id: "bulkhead", label: "Bulkhead", category: "patterns", subcategory: "reliability" },
+  { id: "saga-pattern", label: "Saga Pattern", category: "patterns", subcategory: "reliability" },
+  { id: "cqrs", label: "CQRS", category: "patterns", subcategory: "reliability" },
+  { id: "event-sourcing", label: "Event Sourcing", category: "patterns", subcategory: "reliability" },
+  { id: "outbox-pattern", label: "Outbox Pattern", category: "patterns", subcategory: "reliability" },
+  { id: "idempotency", label: "Idempotency", category: "patterns", subcategory: "reliability" },
+  { id: "leader-election", label: "Leader Election", category: "patterns", subcategory: "reliability" },
+  { id: "distributed-lock", label: "Distributed Lock", category: "patterns", subcategory: "reliability" },
+  { id: "rate-limiter-pattern", label: "Rate Limiter", category: "patterns", subcategory: "reliability" },
+  { id: "token-bucket", label: "Token Bucket", category: "patterns", subcategory: "reliability" },
+  { id: "leaky-bucket", label: "Leaky Bucket", category: "patterns", subcategory: "reliability" },
+];

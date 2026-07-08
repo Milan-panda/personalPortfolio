@@ -1,0 +1,55 @@
+import type { ServiceComponentDef } from "../types";
+
+export const networkComponents: ServiceComponentDef[] = [
+  // Generic
+  { id: "internet", label: "Internet", category: "network", subcategory: "generic" },
+  { id: "lan", label: "LAN", category: "network", subcategory: "generic" },
+  { id: "wan", label: "WAN", category: "network", subcategory: "generic" },
+  { id: "vpn", label: "VPN", category: "network", subcategory: "generic" },
+  { id: "nat-gateway", label: "NAT Gateway", category: "network", subcategory: "generic" },
+  { id: "router", label: "Router", category: "network", subcategory: "generic" },
+  { id: "switch", label: "Switch", category: "network", subcategory: "generic" },
+  { id: "firewall", label: "Firewall", category: "network", subcategory: "generic", iconKey: "firewall" },
+  { id: "reverse-proxy", label: "Reverse Proxy", category: "network", subcategory: "generic" },
+  { id: "forward-proxy", label: "Forward Proxy", category: "network", subcategory: "generic" },
+  { id: "gateway", label: "Gateway", category: "network", subcategory: "generic" },
+  {
+    id: "api-gateway",
+    label: "API Gateway",
+    category: "network",
+    subcategory: "generic",
+    iconKey: "api-gateway",
+  },
+  { id: "cdn", label: "CDN", category: "network", subcategory: "generic", iconKey: "cdn" },
+  { id: "dns", label: "DNS", category: "network", subcategory: "generic", iconKey: "dns" },
+  { id: "waf", label: "WAF", category: "network", subcategory: "generic" },
+  { id: "bastion-host", label: "Bastion Host", category: "network", subcategory: "generic" },
+  { id: "service-mesh", label: "Service Mesh", category: "network", subcategory: "generic" },
+  { id: "vpc", label: "VPC", category: "network", subcategory: "generic" },
+  { id: "subnet", label: "Subnet", category: "network", subcategory: "generic" },
+  { id: "private-network", label: "Private Network", category: "network", subcategory: "generic" },
+  { id: "public-network", label: "Public Network", category: "network", subcategory: "generic" },
+  {
+    id: "cloudfront",
+    label: "CloudFront",
+    category: "network",
+    subcategory: "aws",
+    iconKey: "cloudfront",
+  },
+  // AWS
+  { id: "aws-vpc", label: "VPC", category: "network", subcategory: "aws" },
+  { id: "transit-gateway", label: "Transit Gateway", category: "network", subcategory: "aws" },
+  { id: "internet-gateway", label: "Internet Gateway", category: "network", subcategory: "aws" },
+  { id: "aws-nat-gateway", label: "NAT Gateway", category: "network", subcategory: "aws" },
+  { id: "route-table", label: "Route Table", category: "network", subcategory: "aws" },
+  { id: "security-group", label: "Security Group", category: "network", subcategory: "aws" },
+  { id: "network-acl", label: "Network ACL (NACL)", category: "network", subcategory: "aws" },
+  // Azure
+  { id: "vnet", label: "Virtual Network (VNet)", category: "network", subcategory: "azure" },
+  { id: "application-gateway", label: "Application Gateway", category: "network", subcategory: "azure" },
+  { id: "azure-firewall", label: "Azure Firewall", category: "network", subcategory: "azure" },
+  // GCP
+  { id: "gcp-vpc-network", label: "VPC Network", category: "network", subcategory: "gcp" },
+  { id: "cloud-nat", label: "Cloud NAT", category: "network", subcategory: "gcp" },
+  { id: "cloud-router", label: "Cloud Router", category: "network", subcategory: "gcp" },
+];

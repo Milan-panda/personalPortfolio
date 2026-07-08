@@ -8,7 +8,7 @@ export function Footer() {
       id="contact"
       className="mx-auto w-full max-w-content border-t border-border px-5 pb-16 pt-24"
     >
-      <SectionLabel number="04" text="contact" />
+      <SectionLabel number="05" text="contact" />
       <h2 className="sr-only">Contact</h2>
       <p className="mb-6 text-lg text-text">
         Let&apos;s talk:{" "}

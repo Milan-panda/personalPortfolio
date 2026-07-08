@@ -1,0 +1,28 @@
+import type { ServiceComponentDef } from "../types";
+
+export const messagingComponents: ServiceComponentDef[] = [
+  { id: "queue", label: "Queue", category: "messaging", subcategory: "queue", iconKey: "queue" },
+  { id: "rabbitmq", label: "RabbitMQ", category: "messaging", subcategory: "queue", iconKey: "rabbitmq" },
+  { id: "sqs", label: "Amazon SQS", category: "messaging", subcategory: "queue", iconKey: "sqs" },
+  { id: "azure-queue-storage", label: "Azure Queue Storage", category: "messaging", subcategory: "queue" },
+  { id: "cloud-tasks", label: "Google Cloud Tasks", category: "messaging", subcategory: "queue" },
+  { id: "activemq", label: "ActiveMQ", category: "messaging", subcategory: "queue" },
+  { id: "beanstalkd", label: "Beanstalkd", category: "messaging", subcategory: "queue" },
+  { id: "kafka", label: "Kafka", category: "messaging", subcategory: "pub-sub", iconKey: "kafka" },
+  { id: "pulsar", label: "Pulsar", category: "messaging", subcategory: "pub-sub" },
+  { id: "sns", label: "Amazon SNS", category: "messaging", subcategory: "pub-sub" },
+  { id: "google-pubsub", label: "Google Pub/Sub", category: "messaging", subcategory: "pub-sub" },
+  { id: "azure-service-bus", label: "Azure Service Bus", category: "messaging", subcategory: "pub-sub" },
+  { id: "nats", label: "NATS", category: "messaging", subcategory: "pub-sub" },
+  { id: "redis-streams", label: "Redis Streams", category: "messaging", subcategory: "pub-sub" },
+  { id: "apache-kafka", label: "Apache Kafka", category: "messaging", subcategory: "event-streaming", iconKey: "kafka" },
+  { id: "apache-pulsar", label: "Apache Pulsar", category: "messaging", subcategory: "event-streaming" },
+  { id: "kinesis", label: "Amazon Kinesis", category: "messaging", subcategory: "event-streaming" },
+  { id: "event-hubs", label: "Azure Event Hubs", category: "messaging", subcategory: "event-streaming" },
+  { id: "fifo-queue", label: "FIFO Queue", category: "messaging", subcategory: "queue-types" },
+  { id: "standard-queue", label: "Standard Queue", category: "messaging", subcategory: "queue-types" },
+  { id: "priority-queue", label: "Priority Queue", category: "messaging", subcategory: "queue-types" },
+  { id: "delay-queue", label: "Delay Queue", category: "messaging", subcategory: "queue-types" },
+  { id: "dlq", label: "Dead Letter Queue (DLQ)", category: "messaging", subcategory: "queue-types" },
+  { id: "retry-queue", label: "Retry Queue", category: "messaging", subcategory: "queue-types" },
+];
